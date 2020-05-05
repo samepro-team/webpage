@@ -35,10 +35,10 @@ const Layout = ({ children }) => {
           <div id="footerLinks">
             <ul>
               <li>
-                <Link>プライバシーポリシー</Link>
+                <Link to="tos">利用規約</Link>
               </li>
               <li>
-                <Link>利用規約</Link>
+                <Link to="privacy">プライバシーポリシー</Link>
               </li>
             </ul>
           </div>
