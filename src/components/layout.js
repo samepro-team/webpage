@@ -30,7 +30,9 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <footer>
           <div id="footerLogo">
+            <Link to="/">
             <MainLogo />
+            </Link>
           </div>
           <div id="footerLinks">
             <ul>
