@@ -1,0 +1,3 @@
+https://samepro.netlify.app/* https://samepro.jp/:splat 301!
+http://samepro.netlify.app/* https://samepro.jp/:splat 301!
+http://samepro.jp/* https://samepro.jp/:splat 301!
