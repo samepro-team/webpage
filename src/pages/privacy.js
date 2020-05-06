@@ -1,16 +1,30 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
-import MainImage from "../components/MainImage"
 import SEO from "../components/seo"
 
-const Privacy = () => (
-  <Layout>
-    <SEO title="プライバシーポリシー" />
+const Privacy = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    markdownRemark(frontmatter: {slug: {eq: "privacy"}}) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+  `)
+  console.log(data.markdownRemark.html)
+  return (
+    <>
+    <Layout>
+    <SEO title={data.markdownRemark.frontmatter.title} />
+      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
     
-    
-  </Layout>
-)
+    </Layout>
+    </>
+  )
+  }
 
 export default Privacy

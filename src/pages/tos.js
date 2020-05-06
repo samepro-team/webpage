@@ -1,16 +1,32 @@
 import React from "react"
-import { Link } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import MainImage from "../components/MainImage"
 import SEO from "../components/seo"
 
-const Tos = () => (
-  <Layout>
-    <SEO title="利用規約" />
+const Tos = () => {
+  const data = useStaticQuery(graphql`
+  query {
+    markdownRemark(frontmatter: {slug: {eq: "tos"}}) {
+      html
+      frontmatter {
+        title
+      }
+    }
+  }
+  `)
+  return (
+    <>
+    <Layout>
+    <SEO title={data.markdownRemark.frontmatter.title} />
+      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
     
-    
-  </Layout>
-)
+    </Layout>
+    </>
+  )
+}
+  
+
 
 export default Tos
