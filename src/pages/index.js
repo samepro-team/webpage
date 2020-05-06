@@ -11,6 +11,9 @@ const IndexPage = () => (
     <MainImage />
     <div id="about" className="topPageContents">
       <h2>サメプロとは？</h2>
+      <p className="center">
+        はじめまして、サメプロです。
+      </p>
       <div className="card">
         <h3>初心者でも楽しく、そして深くプログラミングを学べる教室です。</h3>
         <p>サメプロは「プログラミングをはじめてみたい方」や「プログラミング活動の幅を拡げていきたい方」などのプログラミング学習に関する「はじめの一歩」をサポートいたします。</p>
