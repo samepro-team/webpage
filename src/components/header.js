@@ -10,6 +10,22 @@ const Header = ({ siteTitle }) => (
         <MainLogo />
       </Link>
     </div>
+    <div className="mainNav">
+      <ul>
+        <li>
+          <Link to="/#about">サメプロとは？</Link>
+        </li>
+        <li>
+          <Link to="/#cource">コース</Link>
+        </li>
+        <li>
+          <Link to="/#community">コミュニティ</Link>
+        </li>
+        <li>
+          <Link to="/#team">運営メンバー</Link>
+        </li>
+      </ul>
+    </div>
   </header>
 )
 

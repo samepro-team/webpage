@@ -34,12 +34,38 @@ body {
   margin: 0;
 }
 header {
+  
+  vertical-align: middle;
   padding-top: 16px;
   div.headerLogo {
     background-color: #fff;
     padding-left: 8px;
     width: 200px;
     border-radius: 0 40px 40px 0;
+    display: inline-block;
+    position: fixed;
+    z-index: 2;
+    box-shadow: rgba($color: #000000, $alpha: 0.2) 2px 2px;
+  }
+  .mainNav {
+    @media screen and (max-width: 800px) {
+      display: none;
+    }
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+    top: 30px;
+    ul {
+      margin: 0;
+      list-style-type: none;
+      li {
+        display: inline-block;
+        margin: 0 16px 0 0 ;
+        a {
+          color: $SubColor;
+        }
+      }
+    }
   }
 }
 .seeMoreWrap  {
@@ -113,7 +139,7 @@ div.card {
 }
 
 main {
-  margin: 16px auto 0;
+  margin: 80px auto 0;
   width: 90vw;
   max-width: 960px;
   .topPageContents {
