@@ -44,8 +44,16 @@ function SEO({ description, lang, meta, title }) {
           content: title,
         },
         {
+          property: `og:site_name`,
+          content: site.siteMetadata.title,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
+        },
+        {
+          property: `og:image`,
+          content: `https://samepro.jp/MainInage.png`,
         },
         {
           property: `og:type`,
@@ -53,7 +61,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:card`,
-          content: `summary`,
+          content: `summary_large_image`,
+        },
+        {
+          name: `twitter:site`,
+          content: `@SameproJP`
         },
         {
           name: `twitter:creator`,
@@ -61,7 +73,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: `${title} | ${site.siteMetadata.title}`,
         },
         {
           name: `twitter:description`,
