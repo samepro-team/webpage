@@ -19,7 +19,7 @@ const ModernEnvDev = () => {
     <>
     <Layout>
     <SEO title={data.markdownRemark.frontmatter.title} />
-      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} />
+      <div dangerouslySetInnerHTML={{ __html: data.markdownRemark.html }} className="pageContents"/>
     
     </Layout>
     </>

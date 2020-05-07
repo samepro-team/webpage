@@ -45,7 +45,7 @@ const Layout = ({ children }) => {
             </ul>
           </div>
           <div id="copyright">
-            <span>&copy; {new Date().getFullYear()}, Samepro</span>
+            <span>&copy; {new Date().getFullYear()} Samepro</span>
           </div>
           
         </footer>

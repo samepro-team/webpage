@@ -4,8 +4,8 @@ slug: "modernEnvDev"
 created: "2020-05-04"
 updated: "2020-05-04"
 ---
-# GitHub + Visual Studio Code 入門 (全 1 回)　
-2 時間 × 1 回 = 2 時間
+# GitHub + Visual Studio Code 入門 
+2 時間 × 1 回 = 2 時間 (全 1 回)　
 
 ## 目的
 本講座は、すでに開発を進めている方や、これから新たに開発に挑戦する方で、下記が気になる方におすすめです。
