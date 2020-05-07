@@ -53,7 +53,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `og:image`,
-          content: `https://samepro.jp/MainInage.png`,
+          content: `https://samepro.jp/MainImage.png`,
         },
         {
           property: `og:type`,
