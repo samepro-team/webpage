@@ -36,3 +36,6 @@ GitHub によるコード管理や Visual Studio Code を用いた開発環境�
 PC
 
 ※ ただしすべてのPCで実施できる保証が難しいので、事前に相談させてください。
+
+# 開講情報とお申込みはこちら！
+<iframe frameborder="0" height="480" width="320" src="https://purchase.samepro.jp/items/29691511/widget/large" ></iframe>

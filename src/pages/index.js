@@ -75,9 +75,14 @@ const IndexPage = () => (
       
     </div>
     <div id="community" className="topPageContents">
-      <h2>まずはサメプロSlackコミュニティに参加しよう！</h2>
-      <p className="center">コミュニティへの参加は無料！</p>
-      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfeIg0RaxSqgT4CxfzO9nEg0G4PogK-MQftjh5ZYUUzfy4PAA/viewform?embedded=true" id="communityConfirm" width="100%" height="1193" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+      <h2>開講情報とお申し込みはこちら！</h2>
+      <div className="center">
+      <iframe frameborder="0" height="480" width="320" src="https://purchase.samepro.jp/items/29691511/widget/large" ></iframe>
+      <iframe frameborder="0" height="480" width="320" src="https://purchase.samepro.jp/items/29412459/widget/large" ></iframe> 
+      </div>
+      {/* <h2>まずはサメプロSlackコミュニティに参加しよう！</h2> */}
+      {/* <p className="center">コミュニティへの参加は無料！</p> */}
+      {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfeIg0RaxSqgT4CxfzO9nEg0G4PogK-MQftjh5ZYUUzfy4PAA/viewform?embedded=true" id="communityConfirm" width="100%" height="1193" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe> --> */}
     </div>
     <div id="team" className="topPageContents">
       <h2>運営チーム</h2>
